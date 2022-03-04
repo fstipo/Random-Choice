@@ -1,0 +1,77 @@
+/* 
+ - FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+html {
+  /* default: 10px */
+  /* 10 / 16 * 100 = 62.5 */
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  font-size: 2rem;
+  color: rgb(214, 214, 214);
+  background-color: #616ee7;
+
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.choice {
+  text-align: center;
+}
+
+.choice__text {
+  margin-bottom: 2rem;
+}
+
+.choice__text--block {
+  display: block;
+}
+
+.choice__input {
+  padding: 4rem 16rem;
+  margin-bottom: 2rem;
+
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 0.3rem 0.2rem #0a1577 inset;
+}
+
+.choice__input:focus {
+  outline: none;
+}
+
+.choice__output {
+  text-align: left;
+}
+
+.choice__output--span {
+  padding: 1rem 2rem;
+  border-radius: 100rem;
+  width: fit-content;
+  background-color: rgb(255, 94, 0);
+  margin-right: 1rem;
+}
